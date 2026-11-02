@@ -33,6 +33,13 @@ Write in any language you like.
   [me@hutu.si](mailto:me@hutu.si). To claim your blog, see
   [telaread.com/writers](https://telaread.com/writers).
 
+### For developers
+
+Tela has an API for apps. Its guide, the developer rules you accept when you register an app, the
+authorization flow and every route are in [api/](api/README.md), with the OpenAPI document at
+[api/openapi.json](api/openapi.json) (also served at `https://api.telaread.com/v1/openapi.json`).
+Questions and problems with the API are welcome as issues, labelled `area: apps/API`.
+
 ### What happens next
 
 Tela is run by one person, so replies can take a few days. Each issue gets labels: `confirmed`
@@ -61,6 +68,10 @@ won't be done.
 - **这个仓库是公开的。** 不要贴出你的邮箱、登录验证码、密码，或者任何你不想让所有人看到的账户信息。账户、数据或隐私相关的问题，请写信到 [me@hutu.si](mailto:me@hutu.si)。
 - **安全问题**请私下发邮件到 [me@hutu.si](mailto:me@hutu.si)，不要提 issue。详见 [SECURITY.md](SECURITY.md)。
 - **博主**：如果 Tela 收录了你的博客，而你想修改或移除，请写信到 [me@hutu.si](mailto:me@hutu.si)。认领博客请看 [telaread.com/writers](https://telaread.com/writers)。
+
+### 开发者
+
+Tela 提供面向应用的 API。使用指南、登记应用时需要接受的开发者规则、授权流程和全部接口都在 [api/](api/README.md)（英文），OpenAPI 文档见 [api/openapi.json](api/openapi.json)（也可从 `https://api.telaread.com/v1/openapi.json` 获取）。API 相关的问题欢迎提 issue，会标上 `area: apps/API`。
 
 ### 提交之后
 

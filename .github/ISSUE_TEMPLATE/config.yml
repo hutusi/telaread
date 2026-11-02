@@ -7,5 +7,5 @@ contact_links:
     url: https://github.com/hutusi/telaread/blob/main/SECURITY.md
     about: Report privately by email, never in an issue. / 请私下发邮件报告，不要提 issue。
   - name: API for apps / 应用 API
-    url: https://github.com/hutusi/tela/tree/main/docs/api
+    url: https://github.com/hutusi/telaread/blob/main/api/README.md
     about: Documentation for developers building on Tela's API. / 基于 Tela API 开发应用的文档。
