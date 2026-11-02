@@ -1,0 +1,36 @@
+name: Suggest a blog / 推荐博客
+description: A blog Tela should carry, or one that won't load. / 希望 Tela 收录的博客，或者无法加载的博客。
+labels: [blog request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You can already add any blog yourself: in Tela, open **Add a blog** and paste its address. Use this form to suggest a blog for Discover, or when a blog won't load. If you write the blog, you can claim it at [telaread.com/writers](https://telaread.com/writers); to have it changed or taken out of Tela, email me@hutu.si.
+
+        你可以自己添加任何博客：在 Tela 中打开**添加博客**，粘贴博客地址即可。这个表单用来推荐博客进入“发现”，或者反馈无法加载的博客。如果你是博主，可以在 [telaread.com/writers](https://telaread.com/writers) 认领博客；想修改或从 Tela 移除，请发邮件到 me@hutu.si。
+  - type: input
+    id: address
+    attributes:
+      label: Blog address / 博客地址
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: input
+    id: feed
+    attributes:
+      label: Feed address, if you know it / 订阅源地址（如果知道）
+      placeholder: https://example.com/feed.xml
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Request / 请求
+      options:
+        - Suggest it for Discover / 推荐进入“发现”
+        - It won't add or load / 无法添加或加载
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why, or what goes wrong / 推荐理由，或出了什么问题
+      description: What it writes about, or the message Tela shows. / 写的是什么内容，或者 Tela 显示的提示。

@@ -1,0 +1,48 @@
+name: Translation problem / 翻译问题
+description: A post's translation is wrong, missing or garbled. / 某篇文章的译文有错、缺失或乱码。
+labels: [translation]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tela translates posts with a language model, so some mistakes are expected; reports help us improve the prompts and spot posts that went wrong.
+
+        Tela 用大语言模型翻译文章，难免出错；你的反馈能帮我们改进提示词，也能发现翻译失败的文章。
+  - type: input
+    id: url
+    attributes:
+      label: Link to the post on Tela / 文章在 Tela 上的链接
+      description: Open the post in Tela and copy the address. / 在 Tela 中打开文章，复制地址。
+      placeholder: https://telaread.com/…
+    validations:
+      required: true
+  - type: dropdown
+    id: target
+    attributes:
+      label: Translated into / 译成
+      options:
+        - 简体中文
+        - 繁體中文
+        - English
+        - Français
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong? / 哪里不对？
+      multiple: true
+      options:
+        - The meaning is wrong / 意思错了
+        - Not translated, or partly / 没翻译或只翻译了一部分
+        - Wrong language / 语言不对
+        - Formatting, links or images broken / 格式、链接或图片坏了
+        - The title / 标题
+        - Other / 其他
+    validations:
+      required: true
+  - type: textarea
+    id: passage
+    attributes:
+      label: The passage / 具体段落
+      description: Paste the original and the translation, and say what it should be if you know. / 贴出原文和译文；如果知道正确的译法，也请写上。

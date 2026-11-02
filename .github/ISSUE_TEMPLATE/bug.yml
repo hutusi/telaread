@@ -1,0 +1,63 @@
+name: Bug report / 报告问题
+description: Something in Tela is broken, wrong or confusing. / Tela 有地方坏了、不对或让人困惑。
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please [search existing issues](https://github.com/hutusi/telaread/issues) first. **This repository is public**: never include your email, a sign-in code, a password or anything private. Account or data problems go to me@hutu.si.
+
+        感谢反馈！请先[搜索已有的 issue](https://github.com/hutusi/telaread/issues)。**这个仓库是公开的**：不要写出邮箱、验证码、密码或任何隐私信息。账户或数据问题请发邮件到 me@hutu.si。
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / 发生了什么？
+      description: What you saw, including any error message. / 你看到了什么，包括错误提示。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect? / 你期望的是什么？
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      placeholder: |
+        1. Open … / 打开……
+        2. Click … / 点击……
+        3. See … / 看到……
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Page address / 页面地址
+      description: The telaread.com address where it happened, if any. / 出问题的 telaread.com 页面地址（如有）。
+      placeholder: https://telaread.com/…
+  - type: input
+    id: where
+    attributes:
+      label: Device and browser / 设备和浏览器
+      placeholder: e.g. iPhone 15, Safari 18 / Windows 11, Chrome 131
+  - type: dropdown
+    id: language
+    attributes:
+      label: Interface language / 界面语言
+      options:
+        - English
+        - 简体中文
+        - 繁體中文
+        - Français
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / 截图
+      description: Drag images here. Cover anything private first. / 把图片拖到这里。请先遮住隐私信息。
+  - type: checkboxes
+    id: private
+    attributes:
+      label: Privacy / 隐私
+      options:
+        - label: This issue contains nothing private (email, codes, passwords). / 这个 issue 不包含隐私信息（邮箱、验证码、密码）。
+          required: true

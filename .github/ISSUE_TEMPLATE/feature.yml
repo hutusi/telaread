@@ -1,0 +1,29 @@
+name: Feature request / 功能建议
+description: Suggest something Tela should do, or do differently. / 建议 Tela 增加或改进的功能。
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please [search existing issues](https://github.com/hutusi/telaread/issues?q=label%3Aenhancement) first, and add a 👍 to one that already asks for it.
+
+        请先[搜索已有的建议](https://github.com/hutusi/telaread/issues?q=label%3Aenhancement)，已经有人提过的话，在那个 issue 上点 👍 即可。
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do? / 你想做什么？
+      description: The problem or the moment where Tela falls short, not yet the solution. / 先说遇到的问题或不方便的地方，而不是解决办法。
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea / 你的想法
+      description: What Tela could do about it. / Tela 可以怎么做。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Anything else? / 其他补充
+      description: How you manage today, other readers that do it well, screenshots. / 你现在是怎么解决的、其他做得好的阅读器、截图等。

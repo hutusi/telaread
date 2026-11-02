@@ -1,0 +1,16 @@
+name: Question / 疑问
+description: Ask how something in Tela works. / 问问 Tela 的某个功能怎么用。
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The [About page](https://telaread.com/about) answers many questions. For anything about your own account or data, email me@hutu.si instead: this repository is public.
+
+        [关于页面](https://telaread.com/about)可以解答很多问题。涉及你自己的账户或数据，请发邮件到 me@hutu.si：这个仓库是公开的。
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question / 你的问题
+    validations:
+      required: true

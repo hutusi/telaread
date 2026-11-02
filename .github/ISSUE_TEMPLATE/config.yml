@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Account, data or privacy / 账户、数据或隐私
+    url: mailto:me@hutu.si
+    about: Anything about your own account. This repository is public, so write by email. / 涉及你自己账户的问题请发邮件，这个仓库是公开的。
+  - name: Security problem / 安全问题
+    url: https://github.com/hutusi/telaread/blob/main/SECURITY.md
+    about: Report privately by email, never in an issue. / 请私下发邮件报告，不要提 issue。
+  - name: API for apps / 应用 API
+    url: https://github.com/hutusi/tela/tree/main/docs/api
+    about: Documentation for developers building on Tela's API. / 基于 Tela API 开发应用的文档。
