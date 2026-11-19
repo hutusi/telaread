@@ -3,6 +3,15 @@
 Changes to Tela's API for apps, newest first. See [policy.md](policy.md) for how changes are made
 and announced.
 
+## 2026-11-19
+
+- **`removed.articles` is no longer always empty.** When a blog changes its guids (a theme that
+  starts writing permalinks with a trailing slash, a WordPress that moves from `?p=` links to
+  addresses), Tela now recognizes each post by its title and link, and folds the copies it had
+  already stored into the post that stays. Each copy's id comes in `removed.articles` of a pull;
+  the member's read, like, recommendation and highlights come on the post that stays. The format
+  did not change: an app that already handles `removed.articles` needs nothing new.
+
 ## 2026-10-30
 
 - **A blog can be a path.** On a host many blogs share (`world.hey.com`, `buttondown.com`), each
