@@ -42,8 +42,7 @@
       "readingLanguages": [
         "zh-Hans",
         "zh-Hant",
-        "en",
-        "fr"
+        "en"
       ],
       "translationsPerDay": 20,
       "feedsPerDay": 20,

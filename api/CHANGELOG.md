@@ -3,6 +3,19 @@
 Changes to Tela's API for apps, newest first. See [policy.md](policy.md) for how changes are made
 and announced.
 
+## 2026-11-24
+
+- **French is paused as a reading language.** `/meta`'s `limits.readingLanguages` lists the
+  languages Tela translates into now, which no longer include `fr`. `fr` is still a valid `lang`
+  everywhere, and the French titles and translations made before the pause are still sent and
+  served, but nothing new is translated into French: asking for a body translation in `fr` answers
+  `unavailable` unless one already exists (`ready`). An app should offer a member only the
+  languages `/meta` lists. When French comes back, it is listed again.
+- **An answer that names no `lang` passes over a member's French while it is paused**, and takes
+  their interface language instead, as Tela's own reader does. `/v1/me` and the sync `profile`
+  row still report the language the member chose. Naming `lang=fr` still gets the French titles
+  made before the pause.
+
 ## 2026-11-19
 
 - **`removed.articles` is no longer always empty.** When a blog changes its guids (a theme that
