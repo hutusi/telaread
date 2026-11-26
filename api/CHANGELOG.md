@@ -3,6 +3,15 @@
 Changes to Tela's API for apps, newest first. See [policy.md](policy.md) for how changes are made
 and announced.
 
+## 2026-11-25
+
+- **`removed.articles` also lists posts Tela removed**, which it does, rarely, for one its blog took
+  down. Nothing arrives in its place: drop the post, and what the member did with it. The format did
+  not change.
+- **A post's title can change without its body.** When a blog edits only a title, the `articles` row
+  comes again with the new one and the same content, and its translated titles follow. Until now
+  Tela missed such an edit.
+
 ## 2026-11-24
 
 - **French is paused as a reading language.** `/meta`'s `limits.readingLanguages` lists the
